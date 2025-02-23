@@ -23,22 +23,28 @@ public class MainUIHandler : MonoBehaviour
         mainMenu.SetActive(true);
         controlsMenu.SetActive(false);
     }
+    #region menu controls
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
             OpenControlsMenu();
-        }else if (Input.GetKeyDown(KeyCode.E))
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
         {
             CloseControlsMenu();
-        }else if (Input.GetKeyDown(KeyCode.Escape))
+        }
+        else if (Input.GetKeyDown(KeyCode.R))
         {
             ExitGame();
-        }else if (Input.GetKeyDown(KeyCode.Return))
+        }
+        else if (Input.GetKeyDown(KeyCode.T))
         {
             PlayGame();
         }
     }
+    #endregion
+    #region game menu options
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
@@ -61,4 +67,5 @@ public class MainUIHandler : MonoBehaviour
         Application.Quit();
 #endif
     }
+    #endregion
 }

@@ -6,17 +6,22 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    #region attributes
     [SerializeField] GameObject dialogBox;
     [SerializeField] TextMeshProUGUI dialogText;
     [SerializeField] float lettersPerSecond;
+    #endregion
     public static DialogueManager Instance { get; private set; }
     void Awake()
     {
         Instance = this;
     }
+    #region variables
     int currentLine = 0;
     Dialogue dialogue;
     bool isTyping;
+    #endregion
+    #region type and show dialogue
     public IEnumerator ShowDialogue(Dialogue dialogue)
     {
         yield return new WaitForEndOfFrame();
@@ -54,4 +59,5 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+    #endregion
 }
