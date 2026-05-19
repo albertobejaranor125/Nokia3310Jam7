@@ -1,18 +1,18 @@
-# Nokia3310Jam7
- 
-CoffeeMake is a game which explains you about how to make coffee.
+# CoffeeMake | Nokia 3310 Jam 7
 
-# Gameplay Overview
-The player only needs move character in any direction, when the player collides with an obstacle, a dialogue starts automatically.
-It's easy to play.
+A retro-styled utility game developed for the Nokia 3310 Jam 7. The project was designed and optimized around extreme legacy hardware constraints, including a simulated screen resolution and a pixel-art binary aesthetic.
 
-# Controls
-## In game
-- **A / D** - Move
-- **Z** - Continue or Finish Dialogue
+## 🎮 Gameplay Overview
+The player navigates a constrained grid environment to learn the step-by-step process of brewing coffee. Moving the character into world obstacles automatically triggers a decoupled dialogue state machine.
 
-## In menu
-- **Q** - Open Controls Menu
-- **E** - Close Controls Menu
-- **R** - Exit Game
-- **T** - Play Game
+## 🕹️ Controls
+
+### In-Game Navigation
+* **A / D** : Move Character left or right
+* **Z** : Progress through or terminate active dialogue boxes
+
+### Menu System Shortcuts
+* **Q** : Open Controls Overlay Menu
+* **E** : Close Controls Overlay Menu
+* **R** : Terminate Application / Exit
+* **T** : Initialize Gameplay Loop / Play
